@@ -13,7 +13,7 @@ How to run the code
 Well, if you already happen to have an encoded text and wish to decode it, all you need to be concerned with `run_deciphering.py`.
 Typing `python run_deciphering.py -h` would show
 
-Usage: run_deciphering.py [options]
+Usage: run_deciphering.py [options]\n
 
 Options:
   -h, --help            show this help message and exit
