@@ -1,3 +1,15 @@
+Quick Test
+==========
+
+To test running
+
+`python run_deciphering.py -i data/warpeace_input.txt -d data/shakespeare_scrambled.txt` 
+
+To scramble a custom text
+
+`python scramble_text.py -i filename > output`
+
+
 MCMC Deciphering
 ================
 
@@ -17,28 +29,17 @@ Usage: run_deciphering.py [options]
 
 Options:
 
-  -h, --help            show this help message and exit
+  -h, --help ........... show this help message and exit
 
-  -i INPUTFILE, --input=INPUTFILE
+  -i INPUTFILE, --input=INPUTFILE .......... input file to train the code on
 
-                        input file to train the code on
+  -d DECODE, --decode=DECODE .......... file that needs to be decoded
 
-  -d DECODE, --decode=DECODE
+  -e ITERATIONS, --iters=ITERATIONS ........... number of iterations to run the algorithm for
 
-                        file that needs to be decoded
+  -t TOLERANCE, --tolerance=TOLERANCE .......... percentate acceptance tolerance, before we should stop
 
-  -e ITERATIONS, --iters=ITERATIONS
-
-                        number of iterations to run the algorithm for
-
-  -t TOLERANCE, --tolerance=TOLERANCE
-
-                        percentate acceptance tolerance, before we should stop
-
-  -p PRINT_EVERY, --print_every=PRINT_EVERY
-
-                        number of steps after which diagnostics should be
-                        printed
+  -p PRINT_EVERY, --print_every=PRINT_EVERY ...........number of steps after which diagnostics should be printed
 
 If you don't have an inputfile or a file to be decoded, and just want to play around, you can use default files provided in data folder. For example `python run_deciphering.py -i data/warpeace_input.txt -d data/shakespeare_scrambled.txt` would use `warpeace_input.txt` as input (courtesy Andrej Karphaty, @karpathy), and `shakespeare_scrambled.txt` a scrambled version of partial shakespeare book as a file to decode.
 
