@@ -13,19 +13,30 @@ How to run the code
 Well, if you already happen to have an encoded text and wish to decode it, all you need to be concerned with `run_deciphering.py`.
 Typing `python run_deciphering.py -h` would show
 
-Usage: run_deciphering.py [options]\n
+Usage: run_deciphering.py [options]
 
 Options:
+
   -h, --help            show this help message and exit
+
   -i INPUTFILE, --input=INPUTFILE
+
                         input file to train the code on
+
   -d DECODE, --decode=DECODE
+
                         file that needs to be decoded
+
   -e ITERATIONS, --iters=ITERATIONS
+
                         number of iterations to run the algorithm for
+
   -t TOLERANCE, --tolerance=TOLERANCE
+
                         percentate acceptance tolerance, before we should stop
+
   -p PRINT_EVERY, --print_every=PRINT_EVERY
+
                         number of steps after which diagnostics should be
                         printed
 
