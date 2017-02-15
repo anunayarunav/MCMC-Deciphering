@@ -1,6 +1,7 @@
 import numpy as np
 import random
 from copy import deepcopy
+from copy import copy
 
 def az_list():
     """
@@ -63,6 +64,23 @@ def scramble_text(text, p_map):
         text_2.append(p_map[c])
         
     return text_2
+    
+def shuffle_text(text, i1, i2):
+    """
+    Shuffles a text given the index from where to shuffle and
+    the upto what we should shuffle
+    
+    Arguments:
+    i1: index from where to start shuffling from
+    
+    i2: index upto what we should shuffle, excluded.
+    """
+    
+    y = text[i1:i2]
+    random.shuffle(y)
+    t = copy(text)
+    t[i1:i2] = y
+    return t
     
 def move_one_step(p_map):
     """

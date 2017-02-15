@@ -51,7 +51,7 @@ def main(argv):
    entropies = []
    while i < 3:
       iters = options.iterations
-      print_every = options.print_every
+      print_every = int(options.print_every)
       tolerance = options.tolerance
       state, lps, _ = metropolis_hastings(initial_state, propose_a_move, compute_probability_of_state, 
                                             iters=iters, print_every=print_every, tolerance=tolerance, pretty_state=pretty_state)
